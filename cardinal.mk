@@ -14,12 +14,15 @@
 
 $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+# Inherit some common Cardinal stuff.
+$(call inherit-product, vendor/cardinal/common.mk)
+
+# Call the proprietary setup
+$(call inherit-product-if-exists, vendor/xiaomi/ido/ido-vendor.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ido
-PRODUCT_NAME := mk_ido
+PRODUCT_NAME := cardinal_ido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3
 PRODUCT_MANUFACTURER := Xiaomi
