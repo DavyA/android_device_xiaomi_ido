@@ -13,5 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-add_lunch_combo mk_ido-userdebug
-add_lunch_combo mk_ido-eng
+add_lunch_combo cardinal_ido-userdebug
+add_lunch_combo cardinal_ido-eng
